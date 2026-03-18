@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Tournament Pairings</title>
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+    
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            margin: 20px; 
+            background: #f8f9fa;
+        }
+        
+        h1 { 
+            color: #1a1a1a; 
+            border-bottom: 3px solid #2196F3; 
+            padding-bottom: 10px;
+        }
+        
+        .round-title { 
+            font-size: 1.3em; 
+            font-weight: bold; 
+            margin: 15px 0 10px 0;
+            color: #495057;
+            padding: 10px 15px;
+            border-radius: 6px;
+            background-color: #e9ecef;
+            border-left: 4px solid #2196F3;
+        }
+        
+        .section-tabs { 
+            margin: 20px 0; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 8px; 
+        }
+        
+        .section-tab { 
+            padding: 12px 24px; 
+            cursor: pointer; 
+            border: 1px solid #dee2e6; 
+            background: white; 
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .section-tab:hover { 
+            background: #e9ecef; 
+            border-color: #adb5bd;
+        }
+        
+        .section-tab.active { 
+            background: #2196F3; 
+            color: white; 
+            border-color: #1976D2;
+        }
+        
+        .last-updated { 
+            color: #6c757d; 
+            font-size: 0.9em; 
+            margin: 10px 0;
+            text-align: right;
+            font-style: italic;
+        }
+        
+        .result-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.85em;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        .result-w, .result-1 { background: #d4edda; color: #155724; }
+        .result-l, .result-0 { background: #f8d7da; color: #721c24; }
+        .result-d, .result-½ { background: #fff3cd; color: #856404; }
+        .result-x { background: #e2d5f1; color: #4a1b7a; }
+        .result-f { background: #ffe5d0; color: #9b4a0b; }
+        
+        .bye-placeholder { 
+            color: #adb5bd; 
+            font-style: italic;
+        }
+        
+        .dataTables_wrapper {
+            margin-top: 20px;
+        }
+        
+        .dataTables_filter input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+            margin-left: 8px;
+            width: 200px;
+        }
+        
+        .dataTables_length select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+            margin: 0 8px;
+        }
+        
+        .dt-buttons {
+            margin-bottom: 15px;
+        }
+        
+        .dt-button {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 8px 16px;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .dt-button:hover {
+            background: #e9ecef;
+            border-color: #adb5bd;
+        }
+        
+        table.dataTable thead th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .section-tab { 
+                flex: 1 1 auto; 
+                text-align: center; 
+                font-size: 12px; 
+                padding: 8px 12px; 
+            }
+            
+            .dt-button {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            
+            .dataTables_filter input {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tournament-title">Chess Tournament</h1>
+    
+    <div class="section-tabs">
+        <button class="section-tab active" data-section="all">All Sections</button>
+        <button class="section-tab" data-section="champ">Champ 1400+</button>
+        <button class="section-tab" data-section="reserve">Reserve U1400</button>
+        <button class="section-tab" data-section="novice">Novice U1000</button>
+    </div>
+    
+    <div class="last-updated" id="last-updated">Loading...</div>
+    
+    <!-- Round title will be inserted here -->
+    <div id="round-title-container"></div>
+    
+    <table id="pairings-table" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Board</th>
+                <th>White Player</th>
+                <th>Result</th>
+                <th>Black Player</th>
+                <th>Result</th>
+                <th>Section</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            let table;
+            let currentSection = 'all';
+            let allData = {};
+            
+            // Load the data
+            fetch('data/all_pairings.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Raw data loaded:", data);
+                    allData = data;
+                    console.log("Loaded sections:", Object.keys(allData));
+                    initializeTable();
+                    updateLastUpdated();
+                })
+                .catch(error => {
+                    console.error('Error loading data:', error);
+                    $('#pairings-table').html('<tr><td colspan="6" style="text-align: center; color: red;">Error loading data. Please refresh the page.</td></tr>');
+                });
+            
+            function initializeTable() {
+                const tableData = [];
+                
+                // Get round info from first section
+                const firstSection = Object.values(allData)[0];
+                if (firstSection && firstSection.round) {
+                    updateRoundTitle(firstSection.round);
+                }
+                
+                // Build table data
+                Object.keys(allData).forEach(sectionKey => {
+                    const sectionData = allData[sectionKey];
+                    if (!sectionData.pairings) return;
+                    
+                    // Get the display name for this section
+                    const displayName = getSectionDisplayName(sectionKey);
+                    
+                    sectionData.pairings.forEach((pairing, index) => {
+                        tableData.push({
+                            board: pairing.board,
+                            white: pairing.white_player || '—',
+                            whiteResult: pairing.white_result || '',
+                            black: pairing.black_player || '—',
+                            blackResult: pairing.black_result || '',
+                            section: displayName
+                        });
+                    });
+                });
+                
+                // Initialize DataTable
+                table = $('#pairings-table').DataTable({
+                    data: tableData,
+                    columns: [
+                        { data: 'board' },
+                        { 
+                            data: 'white',
+                            render: function(data, type, row) {
+                                if (type === 'display') {
+                                    return data === '—' ? '<span class="bye-placeholder">Bye</span>' : data;
+                                }
+                                return data;
+                            }
+                        },
+                        {
+                            data: 'whiteResult',
+                            render: function(data, type, row) {
+                                if (type === 'display' && data) {
+                                    let resultClass = 'result-badge ';
+                                    if (data === 'W' || data === '1') resultClass += 'result-w';
+                                    else if (data === 'L' || data === '0') resultClass += 'result-l';
+                                    else if (data === 'D' || data === '½') resultClass += 'result-d';
+                                    else if (data === 'X') resultClass += 'result-x';
+                                    else if (data === 'F') resultClass += 'result-f';
+                                    else return data;
+                                    
+                                    return `<span class="${resultClass}">${data}</span>`;
+                                }
+                                return data || '';
+                            }
+                        },
+                        { data: 'black' },
+                        {
+                            data: 'blackResult',
+                            render: function(data, type, row) {
+                                if (type === 'display' && data) {
+                                    let resultClass = 'result-badge ';
+                                    if (data === 'W' || data === '1') resultClass += 'result-w';
+                                    else if (data === 'L' || data === '0') resultClass += 'result-l';
+                                    else if (data === 'D' || data === '½') resultClass += 'result-d';
+                                    else if (data === 'X') resultClass += 'result-x';
+                                    else if (data === 'F') resultClass += 'result-f';
+                                    else return data;
+                                    
+                                    return `<span class="${resultClass}">${data}</span>`;
+                                }
+                                return data || '';
+                            }
+                        },
+                        { data: 'section' }
+                    ],
+                    order: [[0, 'asc']],
+                    pageLength: 50,
+                    lengthMenu: [[25, 50, 100, -1], [25, 50, 100, "All"]],
+                    dom: 'Bfrtip',
+                    buttons: [
+                        {
+                            extend: 'copy',
+                            text: 'Copy to Clipboard'
+                        },
+                        {
+                            extend: 'csv',
+                            text: 'Download CSV'
+                        },
+                        {
+                            extend: 'print',
+                            text: 'Print'
+                        }
+                    ]
+                });
+                
+                // Apply initial filter if needed
+                setTimeout(() => {
+                    if (currentSection !== 'all') {
+                        filterBySection(currentSection);
+                    }
+                }, 300);
+            }
+            
+            function filterBySection(section) {
+                if (!table) return;
+                
+                if (section === 'all') {
+                    table.column(5).search('').draw();
+                } else {
+                    const displayName = getSectionDisplayName(section);
+                    
+                    // Try exact match first
+                    table.column(5).search('^' + displayName + '$', true, false).draw();
+                    
+                    // Check if we got results
+                    setTimeout(() => {
+                        const visibleRows = table.rows({ filter: 'applied' }).count();
+                        
+                        // If no results with exact match, use case-insensitive contains
+                        if (visibleRows === 0) {
+                            console.log(`Exact match failed for "${displayName}", using flexible match`);
+                            
+                            // Extract the core name parts for flexible matching
+                            let searchTerm;
+                            if (section === 'champ') {
+                                searchTerm = 'Champ';
+                            } else if (section === 'reserve') {
+                                searchTerm = 'Reserve';
+                            } else if (section === 'novice') {
+                                searchTerm = 'Novice';
+                            }
+                            
+                            // Use flexible contains search
+                            table.column(5).search(searchTerm, false, true).draw();
+                            
+                            // If still no results, try a very broad match
+                            setTimeout(() => {
+                                const finalRows = table.rows({ filter: 'applied' }).count();
+                                if (finalRows === 0) {
+                                    console.log(`Flexible match failed, showing all rows for debugging`);
+                                    table.column(5).search('').draw();
+                                }
+                            }, 100);
+                        }
+                    }, 100);
+                }
+            }
+            
+            function updateRoundTitle(roundText) {
+                let displayText = roundText ? roundText.replace(/\s+/g, ' ').trim() : 'Tournament Pairings';
+                $('#round-title-container').html(`
+                    <div class="round-title">
+                        🏆 ${displayText}
+                    </div>
+                `);
+            }
+            
+            function getSectionDisplayName(section) {
+                const names = {
+                    'champ': 'Champ 1400+',
+                    'reserve': 'Reserve U1400',
+                    'novice': 'Novice U1000'
+                };
+                return names[section] || section;
+            }
+            
+            function updateLastUpdated() {
+                let latest = null;
+                Object.values(allData).forEach(section => {
+                    if (section.last_updated) {
+                        const updateTime = new Date(section.last_updated);
+                        if (!latest || updateTime > latest) {
+                            latest = updateTime;
+                        }
+                    }
+                });
+                
+                if (latest) {
+                    const formatted = latest.toLocaleString('en-US', {
+                        year: 'numeric',
+                        month: 'short', 
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    });
+                    $('#last-updated').text(`Last updated: ${formatted}`);
+                } else {
+                    $('#last-updated').text('Last updated: Unknown');
+                }
+            }
+            
+            // Handle tab clicks
+            $('.section-tab').on('click', function() {
+                $('.section-tab').removeClass('active');
+                $(this).addClass('active');
+                
+                const section = $(this).data('section');
+                currentSection = section;
+                
+                // Update round title when switching sections
+                if (section !== 'all' && allData[section]) {
+                    updateRoundTitle(allData[section].round);
+                } else if (section === 'all') {
+                    const firstSection = Object.values(allData)[0];
+                    if (firstSection) {
+                        updateRoundTitle(firstSection.round);
+                    }
+                }
+                
+                filterBySection(section);
+            });
+        });
+    </script>
+</body>
+</html>

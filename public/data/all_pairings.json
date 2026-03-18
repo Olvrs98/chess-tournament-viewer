@@ -1,0 +1,306 @@
+{
+  "champ": {
+    "tournament": "Champ 1400+ Pairings (Scroll Right for Standings)",
+    "round": "Pairings for Round 5. @ 2 PM",
+    "last_updated": "2026-03-18T16:49:06.252168",
+    "section": "champ",
+    "pairings": [
+      {
+        "board": 1,
+        "white_player": "FM Manuel Flores Lares (2254 WW 3.5)",
+        "white_result": "D",
+        "black_player": "David Del Valle Uribe (1934 b  3.5)",
+        "black_result": "D",
+        "section": "champ"
+      },
+      {
+        "board": 2,
+        "white_player": "Roberto Rodriguez (2030 w  3.0)",
+        "white_result": "W",
+        "black_player": "Jesus Eduardo Hernandez Marin (1857 b  3.0)",
+        "black_result": "L",
+        "section": "champ"
+      },
+      {
+        "board": 3,
+        "white_player": "Alvaro Gomez (1704 b  3.0)",
+        "white_result": "L",
+        "black_player": "CM Gigli Andres Hernandez Villar (1985 B  3.0)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 4,
+        "white_player": "Eli Elorza (1875 w  3.0)",
+        "white_result": "D",
+        "black_player": "Fernanda De La Cruz (1468 w  3.0)",
+        "black_result": "D",
+        "section": "champ"
+      },
+      {
+        "board": 5,
+        "white_player": "Maximo Ignacio Lopez Mendez (1709 b  2.5)",
+        "white_result": "L",
+        "black_player": "Ian Martinez (1569 b  2.5)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 6,
+        "white_player": "Orlando Falcon (1524 W  2.5)",
+        "white_result": "L",
+        "black_player": "Erick Hernan Cantu Pena (1699 w  2.5)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 7,
+        "white_player": "Ezequiel Perez (1445 w  2.0)",
+        "white_result": "L",
+        "black_player": "Jesus Olivares (1777 B  2.0)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 8,
+        "white_player": "Gael Trejo (1510 WW 2.0)",
+        "white_result": "L",
+        "black_player": "Adrian Eduardo Castillo Campos (1686 b  2.0)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 9,
+        "white_player": "David S Moreno (1629 w  2.0)",
+        "white_result": "W",
+        "black_player": "Ruben Valle Castillo Valle (1530 B  2.0)",
+        "black_result": "L",
+        "section": "champ"
+      },
+      {
+        "board": 10,
+        "white_player": "Sebastian Diaz (1587 w  2.0)",
+        "white_result": "L",
+        "black_player": "Uther K Rodriguez (1411 b  2.0)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 11,
+        "white_player": "Aayan Ahmed (1559 w  2.0)",
+        "white_result": "L",
+        "black_player": "Elias M Gonzalez (1425 b  2.0)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 12,
+        "white_player": "Jose Banuelos-Flores (1485 w  1.0)",
+        "white_result": "L",
+        "black_player": "Morgana Elizabeth Rodriguez (1569 B  1.0)",
+        "black_result": "W",
+        "section": "champ"
+      },
+      {
+        "board": 13,
+        "white_player": "James Cody Pemberton (1521 b  1.0)",
+        "white_result": "L",
+        "black_player": "Nathan Pardo (1455 b  1.0)",
+        "black_result": "W",
+        "section": "champ"
+      }
+    ]
+  },
+  "reserve": {
+    "tournament": "Reserve U1400 Pairings (Scroll Right for Standings)",
+    "round": "Pairings for Round 5. @ 2 PM",
+    "last_updated": "2026-03-18T16:49:07.437793",
+    "section": "reserve",
+    "pairings": [
+      {
+        "board": 14,
+        "white_player": "Jie Laboriante (1343 b  4.0)",
+        "white_result": "D",
+        "black_player": "Ty Matthew Ramirez (1389 b  4.0)",
+        "black_result": "D",
+        "section": "reserve"
+      },
+      {
+        "board": 15,
+        "white_player": "Rogelio Martinez (1358 w  3.5)",
+        "white_result": "W",
+        "black_player": "Ammar Ahmed (1290 BB 3.0)",
+        "black_result": "L",
+        "section": "reserve"
+      },
+      {
+        "board": 16,
+        "white_player": "Marco S Ochoa (1318 w  3.0)",
+        "white_result": "W",
+        "black_player": "Clarissa Ramirez (1268 BB 3.0)",
+        "black_result": "L",
+        "section": "reserve"
+      },
+      {
+        "board": 17,
+        "white_player": "Alex De La Cruz (1186 WW 3.0)",
+        "white_result": "W",
+        "black_player": "Michael Gonzalez (1179 b  0.5)",
+        "black_result": "L",
+        "section": "reserve"
+      },
+      {
+        "board": 18,
+        "white_player": "Victor A Lozano (1345 w  2.5)",
+        "white_result": "W",
+        "black_player": "Jorge L Reyes (1166 w  2.5)",
+        "black_result": "L",
+        "section": "reserve"
+      },
+      {
+        "board": 19,
+        "white_player": "Nicolas Mateo Cavazos (1241 w  2.0)",
+        "white_result": "L",
+        "black_player": "Joshua James Gaytan (1398 b  2.0)",
+        "black_result": "W",
+        "section": "reserve"
+      },
+      {
+        "board": 20,
+        "white_player": "Felipe Diaz (1173 w  2.0)",
+        "white_result": "L",
+        "black_player": "Jose Cavazos (1378 BB 2.0)",
+        "black_result": "W",
+        "section": "reserve"
+      },
+      {
+        "board": 21,
+        "white_player": "Adrian Martinez (1346 w  2.0)",
+        "white_result": "L",
+        "black_player": "Lalo Enriquez (1233 b  2.0)",
+        "black_result": "W",
+        "section": "reserve"
+      },
+      {
+        "board": 22,
+        "white_player": "Aiden Joel Cantu (1105 b  2.0)",
+        "white_result": "D",
+        "black_player": "Jesus Cardenas (1275 b  2.0)",
+        "black_result": "D",
+        "section": "reserve"
+      },
+      {
+        "board": 23,
+        "white_player": "Julia A Cruz (1258 w  2.0)",
+        "white_result": "L",
+        "black_player": "Roberto Garibaldi (1129 b  2.0)",
+        "black_result": "W",
+        "section": "reserve"
+      },
+      {
+        "board": 24,
+        "white_player": "Fabrizio G Lozano (1202 w  1.5)",
+        "white_result": "L",
+        "black_player": "Jose Ludwing Hernandez Ramirez (1000 BB 2.0)",
+        "black_result": "W",
+        "section": "reserve"
+      },
+      {
+        "board": 25,
+        "white_player": "Daniel Aries Ramos (1298 b  1.5)",
+        "white_result": "D",
+        "black_player": "Kaleb Martinez (1150 b  1.5)",
+        "black_result": "D",
+        "section": "reserve"
+      },
+      {
+        "board": 26,
+        "white_player": "Edward Augustine Stapleton (1233 WW 1.0)",
+        "white_result": "D",
+        "black_player": "Luis Angel Cavazos (1157 b  1.0)",
+        "black_result": "D",
+        "section": "reserve"
+      },
+      {
+        "board": 27,
+        "white_player": "Brandon Villanueva (1189 WW 1.0)",
+        "white_result": "L",
+        "black_player": "Romeo Ponce III (1111 w  1.0)",
+        "black_result": "W",
+        "section": "reserve"
+      },
+      {
+        "board": 28,
+        "white_player": "Guyus Augustin Tijerina (1159 W  1.0)",
+        "white_result": "L",
+        "black_player": "Gilberto G Diaz (1178 w  1.0)",
+        "black_result": "W",
+        "section": "reserve"
+      }
+    ]
+  },
+  "novice": {
+    "tournament": "Novice Pairings (Scroll Right for Standings)",
+    "round": "Pairings for Round 4 @ 4 PM",
+    "last_updated": "2026-03-18T16:49:09.043140",
+    "section": "novice",
+    "pairings": [
+      {
+        "board": 33,
+        "white_player": "Alejandra Olguin (unr. W  2.5)",
+        "white_result": "W",
+        "black_player": "Govind Krishna ( 942 BB 2.5)",
+        "black_result": "L",
+        "section": "novice"
+      },
+      {
+        "board": 34,
+        "white_player": "Angelina Schmidt ( 956 W  2.0)",
+        "white_result": "W",
+        "black_player": "Alexis Daniel Chapa Charles ( 986 B  2.5)",
+        "black_result": "L",
+        "section": "novice"
+      },
+      {
+        "board": 35,
+        "white_player": "Rodolfo Martinez III ( 947 WW 2.0)",
+        "white_result": "W",
+        "black_player": "Fernando R Perez ( 702 W  2.0)",
+        "black_result": "L",
+        "section": "novice"
+      },
+      {
+        "board": 36,
+        "white_player": "Marco Ramos ( 878 W  2.0)",
+        "white_result": "W",
+        "black_player": "Ian Leem ( 696 B  2.0)",
+        "black_result": "L",
+        "section": "novice"
+      },
+      {
+        "board": 37,
+        "white_player": "Brandy Marie Villanueva ( 382 b  1.5)",
+        "white_result": "L",
+        "black_player": "Addyson M Perez ( 900 B  1.0)",
+        "black_result": "W",
+        "section": "novice"
+      },
+      {
+        "board": 38,
+        "white_player": "Emmett Rodriguez ( 419 b  1.0)",
+        "white_result": "L",
+        "black_player": "Shana Lively ( 813 B  1.0)",
+        "black_result": "W",
+        "section": "novice"
+      },
+      {
+        "board": 39,
+        "white_player": "Hector Rodriguez ( 549 w  1.0)",
+        "white_result": "L",
+        "black_player": "Sriram Chandra Kumar (unr. B  1.0)",
+        "black_result": "W",
+        "section": "novice"
+      }
+    ]
+  }
+}

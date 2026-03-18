@@ -1,0 +1,64 @@
+{
+  "tournament": "Novice Pairings (Scroll Right for Standings)",
+  "round": "Pairings for Round 4 @ 4 PM",
+  "last_updated": "2026-03-18T16:49:09.043140",
+  "section": "novice",
+  "pairings": [
+    {
+      "board": 33,
+      "white_player": "Alejandra Olguin (unr. W  2.5)",
+      "white_result": "W",
+      "black_player": "Govind Krishna ( 942 BB 2.5)",
+      "black_result": "L",
+      "section": "novice"
+    },
+    {
+      "board": 34,
+      "white_player": "Angelina Schmidt ( 956 W  2.0)",
+      "white_result": "W",
+      "black_player": "Alexis Daniel Chapa Charles ( 986 B  2.5)",
+      "black_result": "L",
+      "section": "novice"
+    },
+    {
+      "board": 35,
+      "white_player": "Rodolfo Martinez III ( 947 WW 2.0)",
+      "white_result": "W",
+      "black_player": "Fernando R Perez ( 702 W  2.0)",
+      "black_result": "L",
+      "section": "novice"
+    },
+    {
+      "board": 36,
+      "white_player": "Marco Ramos ( 878 W  2.0)",
+      "white_result": "W",
+      "black_player": "Ian Leem ( 696 B  2.0)",
+      "black_result": "L",
+      "section": "novice"
+    },
+    {
+      "board": 37,
+      "white_player": "Brandy Marie Villanueva ( 382 b  1.5)",
+      "white_result": "L",
+      "black_player": "Addyson M Perez ( 900 B  1.0)",
+      "black_result": "W",
+      "section": "novice"
+    },
+    {
+      "board": 38,
+      "white_player": "Emmett Rodriguez ( 419 b  1.0)",
+      "white_result": "L",
+      "black_player": "Shana Lively ( 813 B  1.0)",
+      "black_result": "W",
+      "section": "novice"
+    },
+    {
+      "board": 39,
+      "white_player": "Hector Rodriguez ( 549 w  1.0)",
+      "white_result": "L",
+      "black_player": "Sriram Chandra Kumar (unr. B  1.0)",
+      "black_result": "W",
+      "section": "novice"
+    }
+  ]
+}

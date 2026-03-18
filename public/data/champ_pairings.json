@@ -1,0 +1,112 @@
+{
+  "tournament": "Champ 1400+ Pairings (Scroll Right for Standings)",
+  "round": "Pairings for Round 5. @ 2 PM",
+  "last_updated": "2026-03-18T16:49:06.252168",
+  "section": "champ",
+  "pairings": [
+    {
+      "board": 1,
+      "white_player": "FM Manuel Flores Lares (2254 WW 3.5)",
+      "white_result": "D",
+      "black_player": "David Del Valle Uribe (1934 b  3.5)",
+      "black_result": "D",
+      "section": "champ"
+    },
+    {
+      "board": 2,
+      "white_player": "Roberto Rodriguez (2030 w  3.0)",
+      "white_result": "W",
+      "black_player": "Jesus Eduardo Hernandez Marin (1857 b  3.0)",
+      "black_result": "L",
+      "section": "champ"
+    },
+    {
+      "board": 3,
+      "white_player": "Alvaro Gomez (1704 b  3.0)",
+      "white_result": "L",
+      "black_player": "CM Gigli Andres Hernandez Villar (1985 B  3.0)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 4,
+      "white_player": "Eli Elorza (1875 w  3.0)",
+      "white_result": "D",
+      "black_player": "Fernanda De La Cruz (1468 w  3.0)",
+      "black_result": "D",
+      "section": "champ"
+    },
+    {
+      "board": 5,
+      "white_player": "Maximo Ignacio Lopez Mendez (1709 b  2.5)",
+      "white_result": "L",
+      "black_player": "Ian Martinez (1569 b  2.5)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 6,
+      "white_player": "Orlando Falcon (1524 W  2.5)",
+      "white_result": "L",
+      "black_player": "Erick Hernan Cantu Pena (1699 w  2.5)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 7,
+      "white_player": "Ezequiel Perez (1445 w  2.0)",
+      "white_result": "L",
+      "black_player": "Jesus Olivares (1777 B  2.0)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 8,
+      "white_player": "Gael Trejo (1510 WW 2.0)",
+      "white_result": "L",
+      "black_player": "Adrian Eduardo Castillo Campos (1686 b  2.0)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 9,
+      "white_player": "David S Moreno (1629 w  2.0)",
+      "white_result": "W",
+      "black_player": "Ruben Valle Castillo Valle (1530 B  2.0)",
+      "black_result": "L",
+      "section": "champ"
+    },
+    {
+      "board": 10,
+      "white_player": "Sebastian Diaz (1587 w  2.0)",
+      "white_result": "L",
+      "black_player": "Uther K Rodriguez (1411 b  2.0)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 11,
+      "white_player": "Aayan Ahmed (1559 w  2.0)",
+      "white_result": "L",
+      "black_player": "Elias M Gonzalez (1425 b  2.0)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 12,
+      "white_player": "Jose Banuelos-Flores (1485 w  1.0)",
+      "white_result": "L",
+      "black_player": "Morgana Elizabeth Rodriguez (1569 B  1.0)",
+      "black_result": "W",
+      "section": "champ"
+    },
+    {
+      "board": 13,
+      "white_player": "James Cody Pemberton (1521 b  1.0)",
+      "white_result": "L",
+      "black_player": "Nathan Pardo (1455 b  1.0)",
+      "black_result": "W",
+      "section": "champ"
+    }
+  ]
+}

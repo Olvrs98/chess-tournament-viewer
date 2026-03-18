@@ -1,0 +1,128 @@
+{
+  "tournament": "Reserve U1400 Pairings (Scroll Right for Standings)",
+  "round": "Pairings for Round 5. @ 2 PM",
+  "last_updated": "2026-03-18T16:49:07.437793",
+  "section": "reserve",
+  "pairings": [
+    {
+      "board": 14,
+      "white_player": "Jie Laboriante (1343 b  4.0)",
+      "white_result": "D",
+      "black_player": "Ty Matthew Ramirez (1389 b  4.0)",
+      "black_result": "D",
+      "section": "reserve"
+    },
+    {
+      "board": 15,
+      "white_player": "Rogelio Martinez (1358 w  3.5)",
+      "white_result": "W",
+      "black_player": "Ammar Ahmed (1290 BB 3.0)",
+      "black_result": "L",
+      "section": "reserve"
+    },
+    {
+      "board": 16,
+      "white_player": "Marco S Ochoa (1318 w  3.0)",
+      "white_result": "W",
+      "black_player": "Clarissa Ramirez (1268 BB 3.0)",
+      "black_result": "L",
+      "section": "reserve"
+    },
+    {
+      "board": 17,
+      "white_player": "Alex De La Cruz (1186 WW 3.0)",
+      "white_result": "W",
+      "black_player": "Michael Gonzalez (1179 b  0.5)",
+      "black_result": "L",
+      "section": "reserve"
+    },
+    {
+      "board": 18,
+      "white_player": "Victor A Lozano (1345 w  2.5)",
+      "white_result": "W",
+      "black_player": "Jorge L Reyes (1166 w  2.5)",
+      "black_result": "L",
+      "section": "reserve"
+    },
+    {
+      "board": 19,
+      "white_player": "Nicolas Mateo Cavazos (1241 w  2.0)",
+      "white_result": "L",
+      "black_player": "Joshua James Gaytan (1398 b  2.0)",
+      "black_result": "W",
+      "section": "reserve"
+    },
+    {
+      "board": 20,
+      "white_player": "Felipe Diaz (1173 w  2.0)",
+      "white_result": "L",
+      "black_player": "Jose Cavazos (1378 BB 2.0)",
+      "black_result": "W",
+      "section": "reserve"
+    },
+    {
+      "board": 21,
+      "white_player": "Adrian Martinez (1346 w  2.0)",
+      "white_result": "L",
+      "black_player": "Lalo Enriquez (1233 b  2.0)",
+      "black_result": "W",
+      "section": "reserve"
+    },
+    {
+      "board": 22,
+      "white_player": "Aiden Joel Cantu (1105 b  2.0)",
+      "white_result": "D",
+      "black_player": "Jesus Cardenas (1275 b  2.0)",
+      "black_result": "D",
+      "section": "reserve"
+    },
+    {
+      "board": 23,
+      "white_player": "Julia A Cruz (1258 w  2.0)",
+      "white_result": "L",
+      "black_player": "Roberto Garibaldi (1129 b  2.0)",
+      "black_result": "W",
+      "section": "reserve"
+    },
+    {
+      "board": 24,
+      "white_player": "Fabrizio G Lozano (1202 w  1.5)",
+      "white_result": "L",
+      "black_player": "Jose Ludwing Hernandez Ramirez (1000 BB 2.0)",
+      "black_result": "W",
+      "section": "reserve"
+    },
+    {
+      "board": 25,
+      "white_player": "Daniel Aries Ramos (1298 b  1.5)",
+      "white_result": "D",
+      "black_player": "Kaleb Martinez (1150 b  1.5)",
+      "black_result": "D",
+      "section": "reserve"
+    },
+    {
+      "board": 26,
+      "white_player": "Edward Augustine Stapleton (1233 WW 1.0)",
+      "white_result": "D",
+      "black_player": "Luis Angel Cavazos (1157 b  1.0)",
+      "black_result": "D",
+      "section": "reserve"
+    },
+    {
+      "board": 27,
+      "white_player": "Brandon Villanueva (1189 WW 1.0)",
+      "white_result": "L",
+      "black_player": "Romeo Ponce III (1111 w  1.0)",
+      "black_result": "W",
+      "section": "reserve"
+    },
+    {
+      "board": 28,
+      "white_player": "Guyus Augustin Tijerina (1159 W  1.0)",
+      "white_result": "L",
+      "black_player": "Gilberto G Diaz (1178 w  1.0)",
+      "black_result": "W",
+      "section": "reserve"
+    }
+  ]
+}
